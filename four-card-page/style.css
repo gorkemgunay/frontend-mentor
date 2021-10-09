@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    font-family: "Poppins", sans-serif;
+    color: hsl(229, 6%, 66%);
+    font-size: 10px;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+header span {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.cards img {
+    width: 60px;
+    height: auto;
+    align-self: flex-end;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 20px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 4px;
+}
+
+.card-1::after {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.card-2::after {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.card-3::after {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.card-4::after {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: hsl(234, 12%, 34%);
+}
+.card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.card img {
+    margin-top: 30px;
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 120px;
+    padding: 30px 0;
+    font-size: 0.8rem;
+}
+
+/* Media */
+@media (min-width: 700px) {
+    .cards {
+        flex-direction: row;
+        margin: 50px;
+    }
+}
+
+@media (min-width: 985px) {
+    .card-center {
+        transform: translateY(50%);
+    }
+}

@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #ebfbff;
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #ff52bf;
+  color: #fff;
+  padding: 1.3rem 6rem;
+  font-size: 1.3rem;
+  border-radius: 4rem;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #00252e;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 4rem;
+  border-radius: 4rem;
+}
+
+.btn-large {
+  padding: 1.7rem 7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 180px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header {
+  background: url("images/bg-hero-desktop.svg") no-repeat center center/cover;
+  background-color: #ebfbff;
+  padding: 3rem 0;
+}
+
+header nav {
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header p {
+  color: #00252e;
+  margin: 2rem 0;
+  margin-right: 3rem;
+}
+
+.cards {
+  margin: 8rem 0 4rem;
+}
+
+.cards .card {
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  margin: 4rem 0;
+  padding: 4rem;
+}
+
+.cards .card h3 {
+  font-size: 2.5rem;
+}
+
+.cards .card p {
+  color: #808d99;
+  max-width: 400px;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.cards .card img {
+  width: 80%;
+}
+
+.cta .small-card {
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 8rem;
+  position: relative;
+  z-index: 100;
+  margin-bottom: -50%;
+}
+
+.cta .small-card h2 {
+  font-size: 2.5rem;
+}
+
+.cta .small-card .btn {
+  margin-top: 3rem;
+}
+
+footer {
+  background: #00252e;
+  padding: 18rem 0 5rem;
+}
+
+footer .logo {
+  margin-bottom: 4rem;
+}
+
+footer .content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .content li img {
+  width: auto;
+  margin-right: 2rem;
+}
+
+footer .content .flex-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer ul {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+footer ul li {
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+footer .social {
+  border: 1px solid #ebfbff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  body {
+    text-align: center;
+  }
+  .logo {
+    width: 150px;
+  }
+  .btn-large {
+    padding: 1.3rem 4rem;
+  }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+  header h1 {
+    margin-top: 4rem;
+  }
+  header .flex div img {
+    margin-top: 5rem;
+  }
+  header p {
+    margin-right: 0;
+  }
+  .cards {
+    margin: 8rem 0 10rem;
+  }
+  .cards .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .cards .card h3 {
+    margin-top: 3rem;
+  }
+  .cards .card-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta .small-card {
+    padding: 6rem 4rem;
+  }
+  .cta .small-card h2 {
+    font-size: 2rem;
+  }
+  footer {
+    padding: 13rem 0 5rem;
+    text-align: left;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  footer .flex li {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  footer .logo {
+    width: 150px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .cta .small-card {
+    padding: 2rem 2rem;
+  }
+  .cta .small-card h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
